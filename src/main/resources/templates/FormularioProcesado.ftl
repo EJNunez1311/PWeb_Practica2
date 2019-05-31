@@ -91,7 +91,8 @@
                 <td>${x.carrera}</td>
                 <td>${x.telefono}</td>
                 <form method="post" action="/Datoseliminado/${x.matricula?long?c}"><td><button class="btnContact" type="submit">Delete</button></td></form>
-               <form action="/Datoseliminado:x.matricula"></form> <td><button class="btnContact">Edit</button></td>
+            <td><a href="/Modificar/${x.matricula?long?c}"  class="btnContact" >Edit</a></td>
+
             </tr>
         </#list>
         </tbody>

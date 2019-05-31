@@ -63,7 +63,7 @@ public class Estudiante {
 
     }
 
-    public void setMatricula(String telefono) {
+    public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
 }
