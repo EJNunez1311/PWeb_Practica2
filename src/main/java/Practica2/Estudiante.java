@@ -4,6 +4,7 @@ public class Estudiante {
 
     private int matricula;
     private  String nombre;
+    private  String apellido;
     private  String carrera;
     private  String telefono;
 
@@ -13,12 +14,13 @@ public class Estudiante {
 
     @Override
     public String toString() {
-        return String.format("matricula: %d, Nombre: %s, Carrera: %s, Telefono: %s", matricula, nombre, carrera, telefono);
+        return String.format("matricula: %d, Nombre: %s, Apellido: %s, Carrera: %s, Telefono: %s", matricula, nombre, apellido, carrera, telefono);
     }
 
-    public Estudiante(int matricula, String nombre, String carrera, String telefono) {
+    public Estudiante(int matricula, String nombre, String apellido, String carrera, String telefono) {
         this.matricula = matricula;
         this.nombre = nombre;
+        this.apellido = apellido;
         this.carrera = carrera;
         this.telefono = telefono;
     }
@@ -29,6 +31,14 @@ public class Estudiante {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
     }
 
     public String getCarrera() {
