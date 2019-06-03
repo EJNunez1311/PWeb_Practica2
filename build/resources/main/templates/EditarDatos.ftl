@@ -71,13 +71,13 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
-                    <input type="number" name="matricula" class="form-control" placeholder="Matricula" />
+                    <input type="number" name="matricula" class="form-control" placeholder="Matricula" value="${"matricula"}" />
                 </div>
                 <div class="form-group">
-                    <input type="text" name="nombre" class="form-control" placeholder="Nombre" />
+                    <input type="text" name="nombre" class="form-control" placeholder="Nombre" value="${"nombre"}" />
                 </div>
                 <div class="form-group">
-                    <input type="text" name="apellido" class="form-control" placeholder="Apellido" />
+                    <input type="text" name="apellido" class="form-control" placeholder="Apellido" value="${"Apellido"}" />
                 </div>
                 <div class="form-group">
                     <input type="submit" name="btnSubmit" class="btnContact" value="Guardar"/>
@@ -86,10 +86,10 @@
             </div>
             <div class="col-md-6">
                 <div class="form-group">
-                    <input type="text" name="carrera" class="form-control" placeholder="Carrera"/>
+                    <input type="text" name="carrera" class="form-control" placeholder="Carrera" value="${"carrera"}"/>
                 </div>
                 <div class="form-group">
-                    <input type="text" name="telefono" class="form-control" placeholder="Telefono"/>
+                    <input type="text" name="telefono" class="form-control" placeholder="Telefono" value="${"telefono"}"/>
                 </div>
                 <div class="form-group">
 
