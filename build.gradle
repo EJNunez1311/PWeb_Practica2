@@ -4,7 +4,7 @@ plugins {
 }
 
 version '1.0-SNAPSHOT'
-
+applicationName = "PWeb_Practica2"
 sourceCompatibility = 1.8
 
 repositories {
@@ -18,3 +18,5 @@ dependencies {
     compile 'com.sparkjava:spark-template-freemarker:2.5.5' //Freemaker
     compile 'com.sparkjava:spark-template-thymeleaf:2.5.5'  //Thymeleaf
 }
+defaultTasks = ['clean']
+task stage(dependsOn: ['clean', 'installApp'])
