@@ -18,9 +18,10 @@ dependencies {
     compile 'com.sparkjava:spark-core:2.7.2'
     compile 'com.sparkjava:spark-template-freemarker:2.5.5' //Freemaker
     compile 'com.sparkjava:spark-template-thymeleaf:2.5.5'  //Thymeleaf
+    compile 'org.slf4j:slf4j-simple:1.7.21'
 }
 shadowJar {
-    baseName = 'practica2CRUD'
+    baseName = 'PWeb_Practica2'
     classifier = null
     version = null
 }
