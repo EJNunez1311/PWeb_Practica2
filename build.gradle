@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'application'
+    id 'com.github.johnrengelman.shadow' version '4.0.4'
 }
 
 version '1.0-SNAPSHOT'
@@ -18,4 +19,12 @@ dependencies {
     compile 'com.sparkjava:spark-template-freemarker:2.5.5' //Freemaker
     compile 'com.sparkjava:spark-template-thymeleaf:2.5.5'  //Thymeleaf
 }
-1
+shadowJar {
+    baseName = 'practica2CRUD'
+    classifier = null
+    version = null
+}
+
+task stage {
+    dependsOn shadowJar
+}
