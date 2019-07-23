@@ -101,7 +101,6 @@ public class Template {
 //        http://localhost:4567/DatosEdit/
         post("/DatosEdit",(request, response) -> {
             int matricula = Integer.parseInt(request.queryParams("matricula"));
-
             String nombre = request.queryParams("nombre");
             String apellido = request.queryParams("apellido");
             String carrera = request.queryParams("carrera");
