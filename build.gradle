@@ -18,5 +18,3 @@ dependencies {
     compile 'com.sparkjava:spark-template-freemarker:2.5.5' //Freemaker
     compile 'com.sparkjava:spark-template-thymeleaf:2.5.5'  //Thymeleaf
 }
-defaultTasks = ['clean']
-task stage(dependsOn: ['clean', 'installApp'])
